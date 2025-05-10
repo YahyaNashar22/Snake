@@ -12,8 +12,8 @@ namespace Snake
         public int Cols { get; }
 
         // the comma inside [,] means it's a multi-dimensional array, specifically a 2D array
-        public GridValue[,]? Grid { get; }
-        public Direction? Dir { get; private set; }
+        public GridValue[,] Grid { get; }
+        public Direction Dir { get; private set; }
         public int Score { get; private set; }
         public bool GameOver { get; private set; }
 
@@ -41,7 +41,7 @@ namespace Snake
             for (int c = 1; c <= 3; c++ )
             {
                 Grid[r, c] = GridValue.Snake;
-                snakePositions.AddFirst(new Position(r,c))
+                snakePositions.AddFirst(new Position(r, c));
             }
         }
 
