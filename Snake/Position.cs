@@ -2,7 +2,7 @@
 
 namespace Snake
 {
-    internal class Position
+    public class Position
     {
         public int Row { get; }
         public int Col { get; }

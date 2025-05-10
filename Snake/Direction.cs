@@ -2,7 +2,7 @@
 
 namespace Snake
 {
-    internal class Direction
+    public class Direction
     {
         // Grid coordinates start from upper left as (0, 0)
 
